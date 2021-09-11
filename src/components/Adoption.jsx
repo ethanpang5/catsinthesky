@@ -1,9 +1,31 @@
 import React from "react";
 import data from '../Data.json'
+import Review from './Review'
 
 function Adoption() {
 
-
+	var reviewData = []
+	function getReviews() {
+		let lst = data["data"]
+		console.log(lst)
+		for (let i = 0; i < lst.length; i++) {
+			let d = lst[i]
+			console.log(d)
+			const username = d["postedBy"]
+			const date = d["createdAt"]
+			const title = d["title"]
+			const body = d["body"]
+	
+			reviewData.push(<Review username={username} 
+									date={date}
+									title={title}
+									body={body}>
+							</Review>)
+			console.log(username)
+		}
+	}
+	
+	getReviews()
 
 	return (
 		<div className="Adoption">
@@ -26,27 +48,12 @@ function Adoption() {
 
 				</div>
 				<div class="column adoption-right-column">
-					<p>askl;dfj</p>
-					<p>askl;dfj</p>
-					<p>askl;dfj</p>
-					<p>askl;dfj</p>
-					<p>askl;dfj</p>
-					<p>askl;dfj</p>
-					<p>askl;dfj</p>
-					<p>askl;dfj</p>
-					<p>askl;dfj</p>
-					<p>askl;dfj</p>
-					<p>askl;dfj</p>
-					<p>askl;dfj</p>
-					<p>askl;dfj</p>
-					<p>askl;dfj</p>
-					<p>askl;dfj</p>
+					<h1>Reviews</h1>
+					<div className="reviews-scroll">
+						{reviewData}
+					</div>
+					
 				</div>
-
-				
-			</div>
-			<div class="reviews">
-				asd;lj
 			</div>
 		</div>
 	);
