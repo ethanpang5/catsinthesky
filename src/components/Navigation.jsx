@@ -1,11 +1,13 @@
 import React from "react";
 import { Link, withRouter } from "react-router-dom";
+import logo from '../images/logo.png'
 // https://www.techomoro.com/how-to-create-a-multi-page-website-with-react-in-5-minutes/
 function Navigation(props) {
   return (
     <div className="navigation">
       <nav class="navbar navbar-expand navbar-dark bg-dark">
         <div class="container">
+		      <img src={logo}/>
           <Link class="navbar-brand" to="/">
             CATS IN THE SKY
           </Link>
@@ -39,7 +41,7 @@ function Navigation(props) {
                 <Link class="nav-link" to="/adoption">
                   ADOPTION
                 </Link>
-				<li
+				      <li
                 class={`nav-item  ${
                   props.location.pathname === "/photoalbum" ? "active" : ""
                 }`}

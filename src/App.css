@@ -1,3 +1,41 @@
+/* Home Start */
+.home-banner {
+  top: 0;
+  left: 0;
+  background: no-repeat center fixed;
+  width: 100vw;
+  height: 100vh;
+  max-height: 100%;
+  background-size: cover;
+  filter: grayscale(30%);
+  /* filter: saturate(70%); */
+  filter: brightness(80%);
+}
+
+.home {
+  width: 100vw;
+  height: 100vh;
+}
+
+.home-text {
+  position: absolute;
+  bottom: 50%;
+  left: 10%;
+  text-align: left;
+  color: white;
+}
+
+.home-text h1 {
+  font-size: 5.5em;
+  font-weight: bold;
+}
+.home-text h3 {
+  font-size: 2.5em;
+  font-weight: bold;
+}
+
+/* Home End */
+
 .App {
   text-align: center;
 }
