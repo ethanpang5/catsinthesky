@@ -92,24 +92,20 @@ html, body {
 .adoption-left-column {
   background-color: #F1EDDF;
 }
-.adoption-right-column {
-  overflow-x: hidden;
-  overflow-y: auto;
-  /* display: flex; */
-}
-.adoption-right-column p {
-  /* flex-direction: row; */
-}
 
 .adoption-text {
   margin: 50px;
   text-align: left;
 }
 
-
+.adoption-right-column {
+  overflow-x: hidden;
+  overflow-y: auto;
+}
 
 .reviews {
-  overflow: auto;
+  background-color: aliceblue;
+  width: 100%;
 }
 
 /* Adoption End */
