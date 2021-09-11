@@ -45,17 +45,25 @@ html, body {
 
 .dashboard-grid {
   display: grid;
-  grid-template-columns: auto auto;
+  /* grid-template-columns: auto auto; */
+  grid-template-columns: repeat(2, 1fr);
   grid-gap: 20px;
   padding: 20px;
+  align-items: center;
+}
+.dashboard-grid Booking {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .booking-widget {
-  /* border: 1px solid gray; */
-  width: 70%;
-  height: 50%;
+  width: 300px;
+  height: 20%;
   border-radius: 0.5em;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  align-items: center;
+  justify-content: center;
 }
 
 .booking-widget img {
@@ -121,9 +129,13 @@ html, body {
 /* Adoption End */
 
 
+/* Photo Album Start */
 
+.PhotoAlbum h1 {
+  text-align: left;
+}
 
-
+/* Photo Album End */
 
 .App {
   text-align: center;

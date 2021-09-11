@@ -8,7 +8,7 @@ function Booking(props) {
 				<img src={props.catImage} />
 
 				<div className="booking-footer">
-					<h2>{props.catName}</h2>
+					<p>{props.catName}</p>
 					<button>
 						<a href="https://www.google.com/" target="_blank">Book</a>
 					</button>
