@@ -51,11 +51,6 @@ html, body {
   padding: 20px;
   align-items: center;
 }
-.dashboard-grid Booking {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
 
 .booking-widget {
   width: 300px;
@@ -128,11 +123,24 @@ html, body {
 
 /* Adoption End */
 
+.album-grid {
+  display: grid;
+  /* grid-template-columns: auto auto; */
+  grid-template-columns: repeat(6, 1fr);
+  grid-gap: 20px;
+  padding: 20px;
+  align-items: center;
+}
+.album-grid img{
+  width: 80%;
+}
 
 /* Photo Album Start */
 
 .PhotoAlbum h1 {
   text-align: left;
+  margin-left: 15px;
+
 }
 
 /* Photo Album End */
