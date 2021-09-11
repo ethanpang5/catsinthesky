@@ -36,13 +36,13 @@ function Review(props) {
 						>
 							<Typography className={classes.heading}>
 								<div>
-									Posted by {props.username}
+									Posted by <b>{props.username}</b>
 								</div>
 								<div>
 									{props.date}
 								</div>
 								<div>
-									{props.title}
+									<b>{props.title}</b>
 								</div>
 								</Typography>
 						</AccordionSummary>

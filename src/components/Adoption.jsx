@@ -7,7 +7,7 @@ function Adoption() {
 	var reviewData = []
 	function getReviews() {
 		let lst = data["data"]
-		console.log(lst)
+		// console.log(lst)
 		for (let i = 0; i < lst.length; i++) {
 			let d = lst[i]
 			console.log(d)
@@ -21,7 +21,7 @@ function Adoption() {
 									title={title}
 									body={body}>
 							</Review>)
-			console.log(username)
+			// console.log(username)
 		}
 	}
 	
