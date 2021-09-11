@@ -6,7 +6,7 @@ function Booking(props) {
 		<div className="Booking">
 			<div className="booking-widget">
 				<img src={props.catImage} />
-
+				{/* Cat name and button to Google in the bottom of the card */}
 				<div className="booking-footer">
 					<p>{props.catName}</p>
 					<button>

@@ -5,9 +5,9 @@ import Review from './Review'
 function Adoption() {
 
 	var reviewData = []
+	// Parse the data json file
 	function getReviews() {
 		let lst = data["data"]
-		// console.log(lst)
 		for (let i = 0; i < lst.length; i++) {
 			let d = lst[i]
 			console.log(d)
@@ -15,13 +15,12 @@ function Adoption() {
 			const date = d["createdAt"]
 			const title = d["title"]
 			const body = d["body"]
-	
+			// Generate a Review component with the data and store in an array
 			reviewData.push(<Review username={username} 
 									date={date}
 									title={title}
 									body={body}>
 							</Review>)
-			// console.log(username)
 		}
 	}
 	
@@ -50,6 +49,7 @@ function Adoption() {
 				<div class="column adoption-right-column">
 					<h1>Reviews</h1>
 					<div className="reviews-scroll">
+						{/* Plop in the array of Reviews into a scrolling section */}
 						{reviewData}
 					</div>
 					
