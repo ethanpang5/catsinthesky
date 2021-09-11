@@ -36,6 +36,38 @@
 
 /* Home End */
 
+/* Bookings Start */
+
+.dashboard-grid {
+  display: grid;
+  grid-template-columns: auto auto;
+  grid-gap: 20px;
+  padding: 20px;
+}
+
+.booking-widget {
+  /* border: 1px solid gray; */
+  width: 70%;
+  height: 50%;
+  border-radius: 0.5em;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.booking-widget img {
+  width: 100%;
+  height: 100%;
+}
+
+.booking-footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  background-color: #F1EDDF;
+}
+
+/* Bookings End */
+
+
 .App {
   text-align: center;
 }
