@@ -110,9 +110,12 @@ html, body {
 }
 
 .reviews-scroll {
+  height: 50%;
   width: 50%;
+  top: 50%;
   align-self: center;
   margin-left:25%;
+  overflow-y: auto;
 }
 
 .review-widget div {
