@@ -1,6 +1,7 @@
 import React from "react";
 import { Link, withRouter } from "react-router-dom";
 import logo from '../images/logo.png'
+
 // https://www.techomoro.com/how-to-create-a-multi-page-website-with-react-in-5-minutes/
 function Navigation(props) {
   return (
@@ -13,7 +14,6 @@ function Navigation(props) {
               CATS IN THE SKY
             </Link>
           </div>
-          
 
           <div class="nav-links">
             <ul class="navbar-nav ml-auto">
@@ -55,7 +55,6 @@ function Navigation(props) {
               <p>4:20AM - 4:20PM</p>
               <p>Call Us: 000-Never</p>
             </div>
-            
           </div>
         </div>
       </nav>

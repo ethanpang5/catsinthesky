@@ -2,14 +2,15 @@ import React, { useEffect, useState } from "react";
 
 function PhotoAlbum() {
 	
+	// hooks to change state of page as data loads in
 	const [images, setImages] = useState([])
 	const [isLoading, setLoading] = useState(true)
 
+	// use fetch to retrieve data
 	useEffect(() => {
 		fetch("https://jsonplaceholder.typicode.com/photos")
 			.then(response => response.json())
 			.then(data => {
-				
 				var temp = []
 				for (let i = 0; i < 24; i++) {
 					console.log(data[i]["url"])
@@ -17,7 +18,6 @@ function PhotoAlbum() {
 				}
 				setImages(temp)
 				setLoading(false)
-				console.log(images)
 			})
 	}, [])
 
@@ -25,6 +25,7 @@ function PhotoAlbum() {
 	  <div className="PhotoAlbum">
 		  <h1>Photo Album</h1>
 		  <div className="album-grid">
+			  {/* Handle loading message */}
 			  {isLoading ? (
 				  <>
 				  <p>Loading cute cat images</p>

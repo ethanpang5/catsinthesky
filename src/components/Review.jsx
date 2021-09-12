@@ -1,5 +1,4 @@
 import React from "react";
-// import { Accordion, Card, Button } from "react-bootstrap"
 
 import { makeStyles } from '@material-ui/core/styles';
 import Accordion from '@material-ui/core/Accordion';
@@ -8,6 +7,8 @@ import AccordionDetails from '@material-ui/core/AccordionDetails';
 import Typography from '@material-ui/core/Typography';
 import ExpandMoreIcon from '@material-ui/icons/ExpandMore';
 
+
+https://material-ui.com/components/accordion/
 const useStyles = makeStyles((theme) => ({
 	root: {
 		width: '100%',
@@ -20,14 +21,11 @@ const useStyles = makeStyles((theme) => ({
 
 function Review(props) {
 	// props: username, date, title, body
-
 	const classes = useStyles();
-
 	return (
 		<div className="Review">
 			<div className="review-widget">
 				<div className={classes.root}>
-					{/* https://material-ui.com/components/accordion/ */}
 					<Accordion>
 						<AccordionSummary
 							expandIcon={<ExpandMoreIcon />}
