@@ -7,17 +7,19 @@ function Navigation(props) {
     <div className="navigation">
       <nav class="navbar navbar-expand navbar-dark bg-dark">
         <div class="container">
-		      <img src={logo}/>
-          <Link class="navbar-brand" to="/">
-            CATS IN THE SKY
-          </Link>
-
           <div>
+            <img src={logo} />
+            <Link class="navbar-brand" to="/">
+              CATS IN THE SKY
+            </Link>
+          </div>
+          
+
+          <div class="nav-links">
             <ul class="navbar-nav ml-auto">
               <li
-                class={`nav-item  ${
-                  props.location.pathname === "/" ? "active" : ""
-                }`}
+                class={`nav-item  ${props.location.pathname === "/" ? "active" : ""
+                  }`}
               >
                 <Link class="nav-link" to="/">
                   HOME
@@ -25,33 +27,35 @@ function Navigation(props) {
                 </Link>
               </li>
               <li
-                class={`nav-item  ${
-                  props.location.pathname === "/bookings" ? "active" : ""
-                }`}
+                class={`nav-item  ${props.location.pathname === "/bookings" ? "active" : ""
+                  }`}
               >
                 <Link class="nav-link" to="/bookings">
                   BOOKINGS
                 </Link>
               </li>
               <li
-                class={`nav-item  ${
-                  props.location.pathname === "/adoption" ? "active" : ""
-                }`}
+                class={`nav-item  ${props.location.pathname === "/adoption" ? "active" : ""
+                  }`}
               >
                 <Link class="nav-link" to="/adoption">
                   ADOPTION
                 </Link>
-				      <li
-                class={`nav-item  ${
-                  props.location.pathname === "/photoalbum" ? "active" : ""
-                }`}
+              </li>
+              <li
+                class={`nav-item  ${props.location.pathname === "/photoalbum" ? "active" : ""
+                  }`}
               >
                 <Link class="nav-link" to="/photoalbum">
                   PHOTO ALBUM
                 </Link>
               </li>
-              </li>
             </ul>
+            <div class="nav-contact">
+              <p>4:20AM - 4:20PM</p>
+              <p>Call Us: 000-Never</p>
+            </div>
+            
           </div>
         </div>
       </nav>

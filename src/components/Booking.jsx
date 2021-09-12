@@ -8,7 +8,7 @@ function Booking(props) {
 				<img src={props.catImage} />
 				{/* Cat name and button to Google in the bottom of the card */}
 				<div className="booking-footer">
-					<p>{props.catName}</p>
+					<p><b>{props.catName}</b></p>
 					<button>
 						<a href="https://www.google.com/" target="_blank">Book</a>
 					</button>
